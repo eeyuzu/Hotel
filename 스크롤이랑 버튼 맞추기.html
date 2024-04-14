@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤량</title>
+    <style>
+        * {margin: 0; padding: 0; }
+        body {height: 5000px;}
+        .main_position_bar {position: fixed; width:10px; height: 200px; background: #aaa; z-index: 777; left: 50px; top: 50%; transform: translateY(-50%);}
+        .main_position_bar span {display: block; height: 0; width: 20px;  margin-left: -1px; background: #A85010; position: absolute; 
+            top: 0; transition: 0.5s;}
+      /*   .main_position_bar {position: fixed; width:200px; height: 10px; background: #aaa; z-index: 777; 
+            left: 50%; top: 50px; transform: translateX(-50%);}
+        .main_position_bar span {display: block; height: 20px; width: 0;  margin-top: -1px; background: #A85010; position: absolute; 
+            left: 0; transition: 0.5s;} */
+            
+.garobar {position: fixed; width: 100%; height: 10px; background: #777; left: 0;top: 0; z-index: 10;}
+.garobar span {position: absolute; height: 100%; width: 50%; left: 0; top: 0; background: lime;}
+    </style>
+</head>
+<body>
+    <div class="main_position_bar">
+        <span></span>
+    </div>
+
+    <div class="garobar">
+        <span></span>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+         let scrT = $(window).scrollTop();
+           /*  let winH = $(window).height(); //창높이
+            let docH = $(document).height();//도큐먼트는 전체높이다 -5000
+            let barH = $('.main_position_bar').height();
+            let dap = (scrT) / (docH - winH) * 100 /* 우리가 보는 높이가 docH - winH이다. */
+            
+
+            /* $('.main_position_bar span').css({height:dap+'%'})
+            $('.garobar span').css({width: dap + '%'}) */
+
+            //세로형 스크롤량 구하기 - 방법1) 스크롤량을 전체높이의 %로 구한다
+    let winH = $(window).height();
+    let docH = $(document).height();  //전체높이 5000
+    let barH = $('.garobar').height();
+    let dap = (scrT) / (docH - winH) * 100; //전체높이에 스크롤값을 %로구하기
+    $('.main_position_bar span').css({height: dap+ '%'})
+    $('.garobar span').css({width: dap + '%'});
+    });
+
+    </script>
+</body>
+</html>

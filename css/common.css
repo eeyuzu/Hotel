@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+body{ --title1:48px;
+      --title2:64px;
+      --title3:24px;
+      --title4:20px;
+
+      --content1:18px;
+      --link1:16px;
+
+      --nav:20px;
+
+      --colorTit1:#342327;
+      --colorTit2:#fff;
+      --colorTit2:#1E1A1B;
+
+      --colorCont1:#5e5e5e;
+     
+}
+
+body, input, textarea {font-family: 'Pretendard-Regular', '나눔고딕', '맑은 고딕', 
+     'Malgun Gothic', 'Apple SD Gothic Neo', 돋움, Dotum, sans-serif; }
+
+
+.centerbox1600{max-width: 1600px; margin: 0 auto;}
+
+html{font-size: 20px;}
+
+/* 헤더 */ /* 공통*/
+.pc{display: block;}
+.mo{display: none;}
+body.on{height: 100%;overflow: hidden;}
+
+
+header{/* height: 120px; */ position: absolute; top: 0;left: 0; width: 100%; z-index: 20; border-bottom: 1px solid rgb(255, 255, 255,0.3);}
+header .centerbox1600{display: flex; justify-content: space-between; align-items: center; height: 100%;}
+header .centerbox1600 img{width: 26px;margin-right: 3px;}
+header .centerbox1600 h1{font-weight: bold;font-size: 26px;}
+header .centerbox1600 h1 a{color: #fff; 
+      white-space: nowrap;}/* 화이트스페이스-노랩으로 홈페이지 사이즈를 줄였을때 호텔정보의 모양이 두줄이 되는 걸 막음 */
+
+header nav .gnb{ display: flex;}
+header nav .gnb li{font-size: 0.9rem; margin: 2.2rem 0;/*  white-space: nowrap; */}/*폰트사이즈18px에 html의 폰트사이즈20px을 나누기하면(그럼 0.9rem)이 된다 */
+header nav .gnb li a{ color: #fff; font-family: 'Pretendard-Light'; 
+      padding: 1.25rem 1.75rem;}/* 패딩값:25px 35px을 html폰트사이즈20px로 나누기하면 1.25rem 1.75rem이 된다 */
+
+/* 햄버거버튼 만들기 */
+header .hambuger{position: absolute;width: 30px;height: 30px;top: 10px;
+      right: 20px;z-index: 22;}
+header .hambuger span{position: absolute; width: 20px;height: 2px;background: #fff;left: 5px;top: 14px;}
+header .hambuger span:before,
+header .hambuger span:after {content: ""; position: absolute;width: 100%;height: 100%;background: #fff; transition: 0.3s;}
+header .hambuger span:before{top: -6px;}
+header .hambuger span:after{top: 6px;width: 10px;}
+
+header .hambuger.on span {background: rgba(0,0,0,0);}
+header .hambuger.on span:before {transform: rotate(45deg); background: #000; top: 0;}
+header .hambuger.on span:after {transform: rotate(135deg); background: #000; top: 0;width: 20px; }
+/* 여기까지 */
+
+
+
+
+
+header .nav_box{position: absolute; width: 100%; height: 500px;
+      background: rgba(83, 82, 78, 0.336);left: 0;top: 100%;
+backdrop-filter: blur(4px); display: none;}
+
+header .menu_box{height: 100%; display: flex; justify-content: center; align-items: flex-start; margin-top: 55px;}
+header .menu_box .menu{display: flex;}
+header .menu_box .menu > li{ font-size: 24px; /* font-size: 1.2rem; */ font-weight: 500; position: relative;}
+header .menu_box .menu > li > a{color: #ffffff; padding: 30px 50px; /* padding: 1.25em 2.5em; */ display: block; }/* a태그에는 무조건(글자만큼이 아니고 글자를 담은 도형만큼 클릭가능) 디스플레이블럭을 줘야한다. */
+header .menu_box .menu > li .submenu{position: absolute; width: 100%;}
+header .menu_box .menu > li .submenu li{font-size: 20px; font-weight: lighter; text-align: center; line-height: 3; 
+border-radius: 2px;transition: 0.1s;}
+header .menu_box .menu > li .submenu li:hover{background: rgba(34, 21, 4, 0.538);}
+header .menu_box .menu > li .submenu li a{color: #ffffff; display: block;}
+
+
+
+
+/* subpage */
+
+#visual_sub{ height: 760px;background: url(../images/sub.hotel34.png) center top; 
+background-size: cover; display: flex; justify-content: center;align-items: center;}
+#visual_sub .text{text-align: center;color: #fff;}
+#visual_sub .text strong{font-size: 100px; font-weight: lighter; display: block; margin-bottom: 20px;}
+#visual_sub .text p{font-size: 21px; }
+
+
+
+.snb_box{max-width: 1330px;height: 4.35em; margin: 0 auto;background: #251606; transform: translateY(-50%);
+      font-size: 23px;}
+.snb_box .snb{height: 100%; display: flex; justify-content: center;align-items: center;}
+.snb_box .snb li{height: 100%;}
+.snb_box .snb li a{ color: #fff;display: block; height: 100%; 
+padding: 0 2vw; display: flex;align-items: center; white-space: nowrap;}
+.snb_box .snb li.active a span{border-bottom: 1px solid #fff;}
+
+
+
+
+.tabmenu{margin-bottom: 4vw;}
+.tabmenu ul{display: flex; justify-content: center;}
+.tabmenu ul li{font-size: 23px;}
+.tabmenu ul li a{ color: #DECCB0; padding: 1vw 1.5vw;font-family: 'Pretendard-Medium'; }
+.tabmenu ul li.active a span{ border-bottom: 1px solid #d3c2a8;}
+
+
+
+
+.contents_box{padding-bottom: 9.6vw;max-width: 1045px; margin: 0 auto;}
+.contents_box h2{font-size: 36px; margin-bottom: 4.1vw; text-align: center; margin-top: 1.1vw;
+text-transform: uppercase;/* 무조건 대문자로 만들어주는 명령이다 */}
+

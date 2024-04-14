@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>호텔 메인시안</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/noto-serif-gujarati"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="centerbox1600">
+        <h1>
+          <a href="index.html"><img src="images/logo.hotel2.png" alt="" />서울호텔</a>
+        </h1>
+
+        <nav>
+          <ul class="gnb">
+            <li><a href="sub01.html">호텔정보</a></li>
+            <li><a href="#">객실소개</a></li>
+            <li><a href="#">다이닝</a></li>
+            <li><a href="#">웨딩&컨벤션</a></li>
+            <li><a href="sub02.html">채용정보</a></li>
+            <li><a href="#">부대시설</a></li>
+          </ul>
+
+          <div class="hambuger mo">
+            <span></span>
+          </div>
+
+          <div class="nav_box">
+            <div class="menu_box">
+              <ul class="menu">
+                <li>
+                  <a href="sub01.html">호텔정보</a>
+                  <ul class="submenu">
+                    <li><a href="sub01.html">호텔소개</a></li>
+                    <li><a href="#">수상이력</a></li>
+                    <li><a href="#">슬로건</a></li>
+                    <li><a href="sub02.html">채용정보</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">객실소개</a>
+                  <ul class="submenu">
+                    <li><a href="#">프로모션</a></li>
+                    <li><a href="#">룸패키지</a></li>
+                    <li><a href="#">객실안내</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">다이닝</a>
+                  <ul class="submenu">
+                    <li><a href="#">스카이라운지</a></li>
+                    <li><a href="#">아시안라이브</a></li>
+                    <li><a href="#">베이커리</a></li>
+                    <li><a href="#">브래서리</a></li>
+                    <li><a href="#">로비라운지</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">웨딩&컨벤션</a>
+                  <ul class="submenu">
+                    <li><a href="#">웨딩컨시어지</a></li>
+                    <li><a href="#">연회컨시어지</a></li>
+                    <li><a href="#">패밀리파티</a></li>
+                    <li><a href="#">프라이빗파티</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">채용정보</a>
+                  <ul class="submenu">
+                    <li><a href="#">인사제도</a></li>
+                    <li><a href="#">직무소개</a></li>
+                    <li><a href="#">인사제도</a></li>
+                    <li><a href="#">입사지원</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">부대시설</a>
+                  <ul class="submenu">
+                    <li><a href="#">비즈니스</a></li>
+                    <li><a href="#">휘트니스</a></li>
+                    <li><a href="#">지스텀</a></li>
+                    <li><a href="#">더벨스파</a></li>
+                    <li><a href="#">주변안내</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="nav_box2"></div>
+
+    <div id="slide_box">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/slide1(black).png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/bg2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/bg4.png" alt="" />
+          </div>
+        </div>
+        <!-- 버튼없애서 화살표 지움 -->
+        <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+        <!-- 페이지네이션-페이지가 몇번째인지 보여줌1,2,3 -->
+      </div>
+
+      <div class="text_box">
+        <div class="text">The Hotel Seoul</div>
+        <div class="text_s">
+          국내 최고의 럭셔리 비즈니스 호텔인 서울호텔은<br>
+          1,015실 규모를 자랑하며 서울 소공동에 자리잡고 있습니다.
+        </div>
+
+        <div class="pageNavi">
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="pagination">
+            <!-- 밑에걸 스크립트로 만들것이다 -->
+            <!--  <span class="active">01</span>
+          <span>02</span>
+          <span>03</span> -->
+          </div>
+          <div class="progressbar">
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll_ani">
+        <span class="mouse"></span>
+        <p>Scroll down</p>
+      </div>
+    </div>
+
+    <div id="section_box">
+      <section id="section1">
+        <div class="centerbox1600">
+          <h2>PROMOTION</h2>
+          <div class="content">
+            <!-- Swiper -->
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide my_swiper_box">
+                    <img src="images/image 31.png" alt="">
+                    <p>Taste  of The Parkview Dinner</p>
+                   </div>
+                   
+                <div class="swiper-slide my_swiper_box">
+                     <img src="images/promotion2.webp" alt="">
+                     <p>Swimming Night With L</p>
+                </div>
+                <div class="swiper-slide my_swiper_box">
+                    <img src="images/promotion3.jpg" alt="">
+                    <p>Seoulful_Spring Wine</p>
+                </div>
+                <div class="swiper-slide my_swiper_box">
+                    <img src="images/promotion4.jpg" alt="">
+                    <p>Welcome, Bread Barbershop !</p>
+                </div>
+                <div class="swiper-slide my_swiper_box">
+                    <img src="images/promotion6.jpg" alt="">
+                    <p>TAOYUEN Wine Promotion</p>
+                </div>
+                <div class="swiper-slide my_swiper_box">
+                    <img src="images/image 46.png" alt="">
+                    <p>Chair Brewing Teal trousers</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper_btn2">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="section2" class="bg_section2">
+        <!-- <figure><img src="images/main.sec2.png" alt=""></figure> -->
+        <div class="section2_text">
+          <span class="title_s">ROYAL PLAZA SUITE</span>
+          <em>Designer GUIDO CIOMPI</em>
+          <p>최고의 귀빈만을 위한 로열 플라자 스위트는<br>
+            전통적인 컨셉을 가지고 있는 최고급 객실입니다.</p>
+            <a href="#" class="view">예약하기
+              <img src="images/arrow.png" alt="">
+            </a>
+        </div>
+      </section>
+
+
+
+      <section id="section3">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my_swiper_box3">
+                  <img src="images/bottom_bg3.png" alt="" class="slide_img">
+
+                  <div class="bg_section3">
+                    <div class="text_box">
+                      <span class="title_s">THE HOTEL AMENITIES</span>
+                      <em>스파</em>
+                      <p>벨라스파, 서울호텔점은 트리트먼트룸과 커플룸, 비쉬룸,<br>
+                        월풀룸 등 7개의 다양한 콘셉트 룸을 갖추고 있습니다.<br>
+                        원목재를 활용한 자연 친화적인 인테리어와 최상의 제품으로<br>
+                        고객님께 진정한 도심 속 힐링을 선사해드립니다.</p>
+                        <a href="#" class="view">자세히보기
+                          <img src="images/arrow.png" alt=""></a>
+                    </div>
+                  </div>
+            </div>
+               
+            <div class="swiper-slide my_swiper_box3">
+              <img src="images/bottom_2.png" alt="" class="slide_img">
+
+              <div class="bg_section4">
+                <div class="text_box">
+                  <span class="title_s">THE HOTEL AMENITIES</span>
+                  <em>지스텀</em>
+                  <p>지스텀은 ‘오솔길이 있는 정원’이라는 뜻의 라틴어로<br>
+                    도심 속에 위치한 서울호텔의 플라워 브랜드입니다.<br>
+                    고객의 라이프스타일에 맞게 감각적인 스타일링을 제안하며<br>
+                    감성적이고 창의적인 플라워 데코레이션을 만나보세요.</p>
+                    <a href="#" class="view">자세히보기
+                      <img src="images/arrow.png" alt=""></a>
+                </div>
+              </div>
+        </div>
+          </div>
+        </div>
+        <div class="swiper_btn2">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </section>
+    </div>
+
+            
+
+    <footer id="footer">
+      <div class="centerbox">
+          <span class="footerLogo">
+              <img src="images/logo.hotel2.png" alt="서울호텔">서울호텔
+          </span>
+          <div class="addWrap">
+              <a href="#">이용약관 ㅣ 개인정보취급방침 ㅣ 비급여 수가안내</a>
+              <address>
+                ㈜호텔서울 04533 서울특별시 중구 을지로 30 /사업자등록번호 104-81-25980<br>
+                대표이사 김태홍 / 사업자등록번호 104-81-25980 /통신판매신고번호 중고02805호
+                  <p class="copyright">Copyright ⓒ 2023 KIOST ALL RIGHTS RESERVED.</p>
+              </address>
+          </div>
+      </div>
+  </footer> 
+
+  
+
+
+
+    <div class="main_position_bar">
+      <!-- <a href="#slide_box" class="active"></a>
+      <a href="#section1"></a>
+      <a href="#section2"></a>
+      <a href="#section3"></a> -->
+      <span></span>
+    </div>
+
+    <a href="#none" class="go_top">TOP</a>
+  <!--   <div class="garobar">
+      <span></span>
+    </div>
+ -->
+
+
+
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/index.js"></script>
+    <!-- Swiper JS(불러오는 용도) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper(작성하는 용도) -->
+
+    <script>
+      //슬라이드 번호 만들기
+      const slideTime = 2500;
+
+      const slideLeng = $(".mySwiper .swiper-slide").length;
+      for (i = 0; i < slideLeng; i++) {
+        $(".pagination").append("<span>0" + (i + 1) + "</span>");
+      }
+
+      $(".pagination span").eq(0).addClass("active");
+      $('.pageNavi .progressbar .bar').css({width:0}).stop().animate({width:'100%'}, slideTime,'linear');
+
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: slideTime,
+            disableOnInteraction: false,
+      },  /* 슬라이드1 배경을 끊임없이 옆으로 넘기는 기능 */
+
+        /* navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }, */ /* 슬라이드 1의 버튼 안쓰니까 지웠음 */
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' + className + '">' + "0" + (index + 1) + "</span>"
+            );
+          },
+        },
+        on: {
+          slideChangeTransitionStart: function () {
+            $(".pagination span").removeClass("active");
+            $(".pagination span").eq(this.realIndex).addClass("active");
+            
+            $('.pageNavi .progressbar .bar').css({width:0}).stop().animate({width:'100%'}, 2500,'linear');
+          },
+        },
+      });
+
+      /* 섹션2 -프로모션*/
+      var swiper = new Swiper(".mySwiper2", {
+        loop: true,
+        speed: 1000,
+        slidesPerView: 1.2, /*0~700까지 슬라이드 몇개 보여줄건지 */
+        spaceBetween: 15, /* 슬라이드 간격 */
+         autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        /* 브레이크포인트 */
+      breakpoints: {
+        700: {
+          slidesPerView: 2,  //700부터 799까지
+          spaceBetween: 20,
+        },
+        800: {
+          slidesPerView: 2.5,  //800부터 899까지
+          spaceBetween: 20,
+        },
+        900: {
+          slidesPerView: 3,  //900부터 999까지
+          spaceBetween: 20,
+        },
+        1000: {
+          slidesPerView: 3.5,  //1000부터 1080까지
+          spaceBetween: 20,
+        },
+        1082: {
+          slidesPerView: 4.5,  //브라우저가 1081보다 클 때
+          spaceBetween: 25,
+        },
+      },
+    });
+
+
+
+    var swiper = new Swiper(".mySwiper3", {
+        loop: true,
+        effect:'fade',
+        speed: 1000,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+      });
+    </script>
+  </body>
+</html>
